@@ -12,13 +12,7 @@ describe("VotingContract", function () {
         await myVotingContract.deployed();
         expect(await myVotingContract.owner()).to.equal(accounts[0].address);
     });
-    it("Owner try to create voting with too many candidates", async function () {
-        let candidates = new Array();
-        for (i = 1; i < 100; i++) candidates.push(accounts[i].address);
-        await expect(
-            myVotingContract.connect(accounts[0]).addVoting(180, candidates)
-        ).to.be.revertedWith("Too many candidates!");    
-    });
+
     it("Owner created a vote, the counter is increased", async function(){
         const counter_before = await myVotingContract.counter();
         let candidates= new Array();

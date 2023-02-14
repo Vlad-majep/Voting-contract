@@ -1,4 +1,4 @@
-https://rinkeby.etherscan.io/address/0x125bbdf0b2e78694b7cc63f554dd185d39237753#code<br/>
+https://goerli.etherscan.io/address/0x373076139Da0ecA4a930149C4042B576D67040f8#code<br/>
 <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
 <script type="text/javascript">
 
@@ -119,7 +119,7 @@ https://rinkeby.etherscan.io/address/0x125bbdf0b2e78694b7cc63f554dd185d39237753#
             "type": "function"
         }
     ];
-    const ADDRESS = "0x125bbdf0b2e78694b7cc63f554dd185d39237753";
+    const ADDRESS = "0x373076139Da0ecA4a930149C4042B576D67040f8";
 
     (async () => {
         if (window.ethereum) {
@@ -150,7 +150,7 @@ https://rinkeby.etherscan.io/address/0x125bbdf0b2e78694b7cc63f554dd185d39237753#
         var results = await contract.getPastEvents(
             'candidateInfo',
             {
-                fromBlock: 11218642, //start from the block in which the contract was deployed
+                fromBlock: 8492366, //start from the block in which the contract was deployed
                 toBlock: 'latest',
                 filter: { votingID: index }
 

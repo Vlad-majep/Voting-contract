@@ -1,5 +1,5 @@
-// SPDX-License-Identifier: MIT
-pragma solidity 0.8.15;
+// SPDX-License-Identifier: None
+pragma solidity 0.8.17;
 
 contract VotingContract {
     address public owner;
